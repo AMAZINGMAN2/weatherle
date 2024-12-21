@@ -166,7 +166,7 @@ export default function Home() {
               />
 
               {suggestions.length > 0 && (
-                <ul className="absolute z-10 w-full bg-neutral-700 border border-gray-600 rounded shadow-md max-h-40 overflow-y-auto">
+                <ul className="absolute z-10 w-full bg-neutral-700 border border-gray-600 rounded shadow-md max-h-40 max-w-xs overflow-y-auto">
                   {suggestions.map((suggestion, index) => (
                     <li
                       key={index}
