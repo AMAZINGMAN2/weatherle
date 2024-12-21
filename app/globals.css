@@ -5,6 +5,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-sans: var(--font-inter); /* Use Inter as the sans-serif font */
+  --font-mono: var(--font-roboto-mono); /* Use Roboto Mono for monospace */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,5 +19,9 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif; /* Default to Inter */
+}
+
+code, pre {
+  font-family: var(--font-mono), monospace; /* Use Roboto Mono for code blocks */
 }
